@@ -12,7 +12,7 @@ class Story extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-        horizontal: kDefaultPadding / 2,
+        horizontal: kDefaultPadding / 3,
         vertical: kDefaultPadding,
       ),
       child: SingleChildScrollView(
@@ -21,7 +21,7 @@ class Story extends StatelessWidget {
           children: List.generate(
             stroyData.length,
             (index) => Padding(
-              padding: EdgeInsets.only(right: kDefaultPadding / 3),
+              padding: EdgeInsets.only(left: kDefaultPadding / 2),
               child: StoryCard(
                 stroy: stroyData[index],
               ),

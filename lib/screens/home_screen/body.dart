@@ -1,10 +1,10 @@
 import 'package:circle_app_project/constants.dart';
 import 'package:circle_app_project/main.dart';
 import 'package:circle_app_project/screens/home_screen/components/company_post_card.dart';
-import 'package:circle_app_project/screens/home_screen/topics/event.dart';
+import 'package:circle_app_project/screens/home_screen/topics/events.dart';
 import 'package:circle_app_project/screens/home_screen/topics/story.dart';
 import 'package:circle_app_project/screens/home_screen/components/suggested_user_card.dart';
-import 'package:circle_app_project/screens/home_screen/components/suggested_users.dart';
+import 'package:circle_app_project/screens/home_screen/topics/suggested_users.dart';
 import 'package:circle_app_project/screens/home_screen/topics/opportunities_topics.dart';
 import 'package:circle_app_project/screens/home_screen/topics/trending_topics.dart';
 import 'package:circle_app_project/widgets/custom_button.dart';
@@ -152,49 +152,17 @@ class Body extends StatelessWidget {
         SizedBox(height: kDefaultPadding),
 
         //Event
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          child: Row(
-            children: [
-              Text(
-                "Events Attending",
-                style: kTitleTextstyle.copyWith(
-                    fontWeight: FontWeight.w700,
-                    color: kHeaderColor.withOpacity(0.85)),
-              ),
-              Spacer(),
-              Text(
-                "View All",
-                style: kTitleTextstyle.copyWith(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                  color: kSecounderyColor,
-                ),
-              ),
-            ],
-          ),
-        ),
+        Events(),
 
-        Event(),
+        SizedBox(height: kDefaultPadding),
 
-        //Suggested Users
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-          child: Text(
-            "Suggested Users",
-            style: kTitleTextstyle.copyWith(
-                fontWeight: FontWeight.w700,
-                color: kHeaderColor.withOpacity(0.85)),
-          ),
-        ),
+        //SuggestedUsers
         SuggestedUsers(),
 
         SizedBox(height: kDefaultPadding / 2),
 
         //Opportunities
         Opportunities(),
-
-        //SizedBox(height: kDefaultPadding),
 
         SizedBox(height: kDefaultPadding),
 

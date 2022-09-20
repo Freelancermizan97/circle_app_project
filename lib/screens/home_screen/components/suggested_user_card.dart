@@ -1,24 +1,21 @@
 import 'package:circle_app_project/constants.dart';
+import 'package:circle_app_project/models/suggested_user_data.dart';
 import 'package:flutter/material.dart';
 
 class SuggestedUserCard extends StatelessWidget {
   const SuggestedUserCard({
     Key? key,
-    required this.name,
-    required this.title,
-    required this.image,
+    required this.suggestedUser,
   }) : super(key: key);
 
-  final String name;
-  final String title;
-  final String image;
+  final SuggestedUser suggestedUser;
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Container(
-          margin: EdgeInsets.only(left: 10),
+          //margin: EdgeInsets.only(left: 10),
           padding: EdgeInsets.all(20),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
@@ -32,7 +29,7 @@ class SuggestedUserCard extends StatelessWidget {
                     radius: 30,
                     child: CircleAvatar(
                       radius: 30,
-                      backgroundImage: AssetImage(image),
+                      backgroundImage: AssetImage(suggestedUser.image),
                     ),
                   ),
                   Positioned(
@@ -55,13 +52,13 @@ class SuggestedUserCard extends StatelessWidget {
               ),
               SizedBox(height: kDefaultPadding / 2),
               Text(
-                name,
+                suggestedUser.name,
                 style: kTitleTextstyle.copyWith(fontWeight: FontWeight.w700),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: kDefaultPadding / 3),
               Text(
-                title,
+                suggestedUser.title,
                 style: Theme.of(context)
                     .textTheme
                     .bodyText1!
