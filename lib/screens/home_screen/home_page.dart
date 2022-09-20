@@ -2,7 +2,7 @@ import 'package:circle_app_project/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'components/body.dart';
+import 'body.dart';
 import 'components/my_drawer.dart';
 
 class HomePage extends StatelessWidget {

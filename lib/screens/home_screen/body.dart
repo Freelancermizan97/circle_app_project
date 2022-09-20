@@ -1,7 +1,13 @@
 import 'package:circle_app_project/constants.dart';
-import 'package:circle_app_project/models/story_data.dart';
-import 'package:circle_app_project/screens/home_screen/components/event_card.dart';
-import 'package:circle_app_project/screens/home_screen/components/story_card.dart';
+import 'package:circle_app_project/main.dart';
+import 'package:circle_app_project/screens/home_screen/components/company_post_card.dart';
+import 'package:circle_app_project/screens/home_screen/topics/event.dart';
+import 'package:circle_app_project/screens/home_screen/topics/story.dart';
+import 'package:circle_app_project/screens/home_screen/components/suggested_user_card.dart';
+import 'package:circle_app_project/screens/home_screen/components/suggested_users.dart';
+import 'package:circle_app_project/screens/home_screen/topics/opportunities_topics.dart';
+import 'package:circle_app_project/screens/home_screen/topics/trending_topics.dart';
+import 'package:circle_app_project/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,26 +18,7 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: kDefaultPadding / 2,
-            vertical: kDefaultPadding,
-          ),
-          child: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: List.generate(
-                stroyData.length,
-                (index) => Padding(
-                  padding: EdgeInsets.only(right: kDefaultPadding / 3),
-                  child: StoryCard(
-                    stroy: stroyData[index],
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ),
+        Story(),
         SizedBox(height: kDefaultPadding / 2),
         Container(
           margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
@@ -188,38 +175,31 @@ class Body extends StatelessWidget {
           ),
         ),
 
+        Event(),
+
+        //Suggested Users
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: kDefaultPadding / 2,
-            vertical: kDefaultPadding,
-          ),
-          child: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(children: [
-              EventCard(
-                image: "assets/images/image2.png",
-                date: "20 May, 2022",
-                name: "Event Name Here",
-                people: "1.5K People attend",
-              ),
-              EventCard(
-                image: "assets/images/image2.png",
-                date: "20 May, 2022",
-                name: "name",
-                people: "1.5K People attend",
-              ),
-              EventCard(
-                image: "assets/images/image2.png",
-                date: "20 May, 2022",
-                name: "name",
-                people: "1.5K People attend",
-              ),
-            ]),
+          padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+          child: Text(
+            "Suggested Users",
+            style: kTitleTextstyle.copyWith(
+                fontWeight: FontWeight.w700,
+                color: kHeaderColor.withOpacity(0.85)),
           ),
         ),
+        SuggestedUsers(),
 
-        //S
-        SizedBox(height: 200)
+        SizedBox(height: kDefaultPadding / 2),
+
+        //Opportunities
+        Opportunities(),
+
+        //SizedBox(height: kDefaultPadding),
+
+        SizedBox(height: kDefaultPadding),
+
+        //Trending Topics
+        TrendingTopoics(),
       ],
     );
   }

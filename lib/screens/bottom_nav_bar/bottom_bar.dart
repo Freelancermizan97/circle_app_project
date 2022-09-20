@@ -13,6 +13,7 @@ class BottomBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isSelected = false;
     return BottomNavigationBar(
       selectedIconTheme: IconThemeData(color: kSecounderyColor),
       selectedItemColor: kSecounderyColor,
