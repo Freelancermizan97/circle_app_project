@@ -1,4 +1,5 @@
 import 'package:circle_app_project/constants.dart';
+import 'package:circle_app_project/screens/bottom_nav_bar/bottom_controller.dart';
 import 'package:circle_app_project/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
             backgroundColor: kBackgroundColor,
             fontFamily: "SK",
           ),
-          home: SplashScreen(),
+          home: //SplashScreen(),
+              BottomController(),
         );
       },
     );

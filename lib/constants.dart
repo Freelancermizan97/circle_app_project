@@ -8,6 +8,7 @@ const kSecounderyColor = Color(0xff019DA2);
 const kBackgroundColor = Color(0xffF5F5F5);
 const kHeaderColor = Color(0xff000000);
 final kTitleColor = Color(0xFF019DA2);
+const kDividerColor = Color(0xffE4E4E4);
 
 final kDefaultPadding = 20.r;
 

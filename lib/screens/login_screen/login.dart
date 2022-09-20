@@ -1,4 +1,5 @@
 import 'package:circle_app_project/constants.dart';
+import 'package:circle_app_project/screens/bottom_nav_bar/bottom_controller.dart';
 import 'package:circle_app_project/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -50,7 +51,14 @@ class LoginScreen extends StatelessWidget {
               ],
             ),
             SizedBox(height: kDefaultPadding * 2),
-            CustomButton(text: "SIGN IN"),
+            InkWell(
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BottomController(),
+                  )),
+              child: CustomButton(text: "SIGN IN"),
+            ),
             Spacer(),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Text(
