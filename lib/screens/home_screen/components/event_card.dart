@@ -51,7 +51,10 @@ class EventCard extends StatelessWidget {
                 color: kHeaderColor.withOpacity(0.5)),
           ),
           SizedBox(height: kDefaultPadding / 2),
-          CustomButton(text: "Add to Calendar")
+          CustomButton(
+            text: "Add to Calendar",
+            onTap: () {},
+          )
         ],
       ),
     );

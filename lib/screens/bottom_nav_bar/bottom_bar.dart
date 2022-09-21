@@ -22,28 +22,23 @@ class BottomBar extends StatelessWidget {
       onTap: onTap,
       items: [
         BottomNavigationBarItem(
-          //icon: Image.asset("assets/icons/home_icon.png"),
-          icon: Icon(Icons.home),
+          icon: ImageIcon(AssetImage("assets/icons/home_icon.png")),
           label: "Home",
         ),
         BottomNavigationBarItem(
-          //icon: Image.asset("assets/icons/connection_icon.png"),
-          icon: Icon(Icons.groups_outlined),
+          icon: ImageIcon(AssetImage("assets/icons/connection_icon.png")),
           label: "Connections",
         ),
         BottomNavigationBarItem(
-          //icon: Image.asset("assets/icons/card_icon.png"),
-          icon: Icon(Icons.badge_outlined),
+          icon: ImageIcon(AssetImage("assets/icons/card_icon.png")),
           label: "My Card",
         ),
         BottomNavigationBarItem(
-          //icon: Image.asset("assets/icons/event_icon_blc.png"),
-          icon: Icon(Icons.event),
+          icon: ImageIcon(AssetImage("assets/icons/event_icon_blc.png")),
           label: "Events",
         ),
         BottomNavigationBarItem(
-          //icon: Image.asset("assets/icons/business_icon.png"),
-          icon: Icon(Icons.business_center_outlined),
+          icon: ImageIcon(AssetImage("assets/icons/business_icon.png")),
           label: "Business",
         ),
       ],

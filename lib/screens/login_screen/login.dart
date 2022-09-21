@@ -52,12 +52,16 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: kDefaultPadding * 2),
             InkWell(
-              onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => BottomController(),
-                  )),
-              child: CustomButton(text: "SIGN IN"),
+              child: CustomButton(
+                text: "SIGN IN",
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => BottomController(),
+                      ));
+                },
+              ),
             ),
             Spacer(),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [

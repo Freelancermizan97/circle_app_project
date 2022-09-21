@@ -55,13 +55,14 @@ class CardInfoScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsets.symmetric(
                 horizontal: kDefaultPadding, vertical: kDefaultPadding),
-            child: InkWell(
+            child: CustomButton(
+              text: "Add Contacts to My Wallet",
               onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => QRCode(),
-                  )),
-              child: CustomButton(text: "Add Contacts to My Wallet"),
+                context,
+                MaterialPageRoute(
+                  builder: (context) => QRCode(),
+                ),
+              ),
             ),
           )
         ],
