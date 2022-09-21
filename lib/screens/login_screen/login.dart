@@ -1,5 +1,6 @@
 import 'package:circle_app_project/constants.dart';
 import 'package:circle_app_project/screens/bottom_nav_bar/bottom_controller.dart';
+import 'package:circle_app_project/screens/forget_password/forgetScreen.dart';
 import 'package:circle_app_project/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -44,9 +45,16 @@ class LoginScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Text(
-                  "Forgot Password",
-                  style: kTitleTextstyle.copyWith(color: kSecounderyColor),
+                InkWell(
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ForgotScreen(),
+                      )),
+                  child: Text(
+                    "Forgot Password",
+                    style: kTitleTextstyle.copyWith(color: kSecounderyColor),
+                  ),
                 )
               ],
             ),

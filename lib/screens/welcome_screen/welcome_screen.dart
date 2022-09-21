@@ -1,5 +1,6 @@
 import 'package:circle_app_project/constants.dart';
 import 'package:circle_app_project/screens/login_screen/login.dart';
+import 'package:circle_app_project/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -92,7 +93,14 @@ class WelcomeScreen extends StatelessWidget {
                         children: [
                           DownArrowButton(),
                           SizedBox(height: kDefaultPadding * 2),
-                          StartButton(),
+                          InkWell(
+                            onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => OnBoardingScreen(),
+                                )),
+                            child: StartButton(),
+                          ),
                           SizedBox(height: kDefaultPadding),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,

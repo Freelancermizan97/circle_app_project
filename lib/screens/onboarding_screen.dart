@@ -1,3 +1,4 @@
+import 'package:circle_app_project/screens/login_screen/login.dart';
 import 'package:circle_app_project/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -231,7 +232,11 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               ),
               CustomButton(
                 text: selectIndex == _list.length - 1 ? "Sign Me Up!" : "Skip",
-                onTap: () {},
+                onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LoginScreen(),
+                    )),
               ),
             ],
           ),
@@ -244,7 +249,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       {required String image, required String text, required Color color}) {
     return Expanded(
       child: Container(
-        height: 11,
+        //height: 100,
         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 5),
         decoration:
             BoxDecoration(color: color, borderRadius: BorderRadius.circular(8)),

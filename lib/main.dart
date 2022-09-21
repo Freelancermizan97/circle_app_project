@@ -24,9 +24,9 @@ class MyApp extends StatelessWidget {
             backgroundColor: kBackgroundColor,
             fontFamily: "SK",
           ),
-          home: //SplashScreen(),
-              //CardInfoScreen(),
-              BottomController(),
+          home: SplashScreen(),
+          //CardInfoScreen(),
+          //BottomController(),
         );
       },
     );
