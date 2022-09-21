@@ -1,5 +1,6 @@
 import 'package:circle_app_project/constants.dart';
 import 'package:circle_app_project/models/event_data.dart';
+import 'package:circle_app_project/screens/events_screen/events_screen.dart';
 import 'package:circle_app_project/screens/home_screen/components/event_card.dart';
 import 'package:flutter/material.dart';
 
@@ -25,12 +26,19 @@ class Events extends StatelessWidget {
                     color: kHeaderColor.withOpacity(0.85)),
               ),
               Spacer(),
-              Text(
-                "View All",
-                style: kTitleTextstyle.copyWith(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                  color: kSecounderyColor,
+              InkWell(
+                onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => EventsScreen(),
+                    )),
+                child: Text(
+                  "View All",
+                  style: kTitleTextstyle.copyWith(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                    color: kSecounderyColor,
+                  ),
                 ),
               ),
               SizedBox(width: kDefaultPadding)

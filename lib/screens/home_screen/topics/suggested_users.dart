@@ -1,7 +1,6 @@
 import 'package:circle_app_project/constants.dart';
 import 'package:circle_app_project/models/suggested_user_data.dart';
 import 'package:circle_app_project/screens/home_screen/components/suggested_user_card.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class SuggestedUsers extends StatelessWidget {

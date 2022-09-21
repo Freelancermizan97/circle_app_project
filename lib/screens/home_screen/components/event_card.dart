@@ -15,7 +15,6 @@ class EventCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 300,
-      //margin: EdgeInsets.only(left: 10),
       padding: EdgeInsets.symmetric(
           horizontal: kDefaultPadding, vertical: kDefaultPadding),
       decoration: BoxDecoration(

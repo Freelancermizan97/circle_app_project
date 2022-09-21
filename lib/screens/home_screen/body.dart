@@ -1,13 +1,9 @@
 import 'package:circle_app_project/constants.dart';
-import 'package:circle_app_project/main.dart';
-import 'package:circle_app_project/screens/home_screen/components/company_post_card.dart';
 import 'package:circle_app_project/screens/home_screen/topics/events.dart';
 import 'package:circle_app_project/screens/home_screen/topics/story.dart';
-import 'package:circle_app_project/screens/home_screen/components/suggested_user_card.dart';
 import 'package:circle_app_project/screens/home_screen/topics/suggested_users.dart';
 import 'package:circle_app_project/screens/home_screen/topics/opportunities_topics.dart';
 import 'package:circle_app_project/screens/home_screen/topics/trending_topics.dart';
-import 'package:circle_app_project/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
