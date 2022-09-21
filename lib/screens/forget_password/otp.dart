@@ -1,5 +1,6 @@
 import 'package:circle_app_project/constants.dart';
 import 'package:circle_app_project/screens/forget_password/OtpComponent.dart';
+import 'package:circle_app_project/screens/forget_password/new_password.dart';
 import 'package:circle_app_project/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -72,9 +73,12 @@ class OtpScreen extends StatelessWidget {
                     style: kTitleTextstyle,
                   ),
                   SizedBox(width: kDefaultPadding / 10),
-                  Text(
-                    "Please resend",
-                    style: kTitleTextstyle.copyWith(color: kSecounderyColor),
+                  InkWell(
+                    onTap: () {},
+                    child: Text(
+                      "Please resend",
+                      style: kTitleTextstyle.copyWith(color: kSecounderyColor),
+                    ),
                   ),
                 ],
               ),
@@ -82,7 +86,10 @@ class OtpScreen extends StatelessWidget {
               const Spacer(),
               CustomButton(
                 text: "RECOVER PASSWORD",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => NewPassword()));
+                },
               ),
             ],
           ),

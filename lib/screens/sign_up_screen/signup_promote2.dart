@@ -2,7 +2,6 @@ import 'package:circle_app_project/constants.dart';
 import 'package:circle_app_project/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'signup_complete.dart';
 
 class SignUpPromoteScreen2 extends StatelessWidget {

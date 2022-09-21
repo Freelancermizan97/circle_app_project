@@ -3,7 +3,6 @@ import 'package:circle_app_project/screens/sign_up_screen/signup_promote1.dart';
 import 'package:circle_app_project/widgets/custom_button.dart';
 import 'package:csc_picker/csc_picker.dart';
 import 'package:flutter/material.dart';
-
 import 'components/reuseable_text_field.dart';
 
 class SignUpForm extends StatefulWidget {

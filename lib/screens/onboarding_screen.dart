@@ -1,4 +1,6 @@
+import 'package:circle_app_project/constants.dart';
 import 'package:circle_app_project/screens/login_screen/login.dart';
+import 'package:circle_app_project/screens/sign_up_screen/signup_first_screen.dart';
 import 'package:circle_app_project/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -230,13 +232,17 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               SizedBox(
                 height: 30,
               ),
-              CustomButton(
-                text: selectIndex == _list.length - 1 ? "Sign Me Up!" : "Skip",
-                onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => LoginScreen(),
-                    )),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                child: CustomButton(
+                  text:
+                      selectIndex == _list.length - 1 ? "Sign Me Up!" : "Skip",
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SignUpFirstScreen(),
+                      )),
+                ),
               ),
             ],
           ),

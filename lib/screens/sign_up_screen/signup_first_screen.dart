@@ -4,7 +4,6 @@ import 'package:circle_app_project/screens/sign_up_screen/signup_form.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../../widgets/custom_button.dart';
 import '../login_screen/components/input_email_field.dart';
 
@@ -112,15 +111,15 @@ class _SignUpFirstScreenState extends State<SignUpFirstScreen> {
                 ),
               ),
               SizedBox(height: kDefaultPadding),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Text(
-                    "Forgot Password",
-                    style: kTitleTextstyle.copyWith(color: kSecounderyColor),
-                  )
-                ],
-              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.end,
+              //   children: [
+              //     Text(
+              //       "Forgot Password",
+              //       style: kTitleTextstyle.copyWith(color: kSecounderyColor),
+              //     )
+              //   ],
+              // ),
               const Padding(
                 padding: EdgeInsets.only(top: 10),
                 child: Text(
@@ -152,7 +151,10 @@ class _SignUpFirstScreenState extends State<SignUpFirstScreen> {
                   },
                   child: CustomButton(
                     text: "NEXT",
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const SignUpForm()));
+                    },
                   )),
               const Spacer(),
               Row(

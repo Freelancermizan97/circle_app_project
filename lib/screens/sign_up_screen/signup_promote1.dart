@@ -2,7 +2,6 @@ import 'package:circle_app_project/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'components/reuseable_container.dart';
 import 'components/reuseable_text_field.dart';
 

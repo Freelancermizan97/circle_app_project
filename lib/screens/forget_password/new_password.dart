@@ -1,9 +1,9 @@
 import 'package:circle_app_project/constants.dart';
+import 'package:circle_app_project/screens/login_screen/components/input_password_field.dart';
+import 'package:circle_app_project/screens/login_screen/login.dart';
 import 'package:circle_app_project/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../login_screen/components/input_password_field.dart';
 
 class NewPassword extends StatelessWidget {
   const NewPassword({super.key});
@@ -46,7 +46,10 @@ class NewPassword extends StatelessWidget {
               const Spacer(),
               CustomButton(
                 text: "UPDATE PASSWORD",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const LoginScreen()));
+                },
               ),
             ],
           ),

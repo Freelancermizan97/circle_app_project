@@ -1,3 +1,4 @@
+import 'package:circle_app_project/screens/bottom_nav_bar/bottom_controller.dart';
 import 'package:flutter/material.dart';
 
 class SignUpComplete extends StatelessWidget {
@@ -5,6 +6,13 @@ class SignUpComplete extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Future.delayed(
+      Duration(seconds: 3),
+      () {
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const BottomController()));
+      },
+    );
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: Container(
