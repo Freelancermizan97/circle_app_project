@@ -22,6 +22,7 @@ class TrendingTopoics extends StatelessWidget {
           ),
           SizedBox(height: kDefaultPadding / 2),
           CompanyPostsCard(
+            bgColor: Colors.white,
             logo: "assets/images/brand_logo3.png",
             companyName: "Creative Studios",
             companyLocation: "Design Agency Compnay",
@@ -32,6 +33,7 @@ class TrendingTopoics extends StatelessWidget {
           ),
           SizedBox(height: kDefaultPadding / 2),
           CompanyPostsCard(
+            bgColor: Colors.white,
             logo: "assets/images/brand_logo4.png",
             companyName: "Creative Studios",
             companyLocation: "Design Agency Compnay",

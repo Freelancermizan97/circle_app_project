@@ -9,6 +9,7 @@ const kBackgroundColor = Color(0xffF5F5F5);
 const kHeaderColor = Color(0xff000000);
 final kTitleColor = Color(0xFF019DA2);
 const kDividerColor = Color(0xffE4E4E4);
+const kActiveStatus = Color(0xff22C375);
 
 final kDefaultPadding = 20.r;
 
@@ -20,7 +21,7 @@ final kHeadingTextStyle = TextStyle(
 );
 
 final kTitleTextstyle = TextStyle(
-  fontSize: 15.sp,
+  fontSize: 14.sp,
   color: kHeaderColor,
   fontWeight: FontWeight.w400,
 );

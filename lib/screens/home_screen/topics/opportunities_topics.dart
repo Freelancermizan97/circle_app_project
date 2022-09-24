@@ -34,6 +34,7 @@ class Opportunities extends StatelessWidget {
           ),
           SizedBox(height: kDefaultPadding / 2),
           CompanyPostsCard(
+            bgColor: Colors.white,
             logo: "assets/images/brand_logo1.png",
             companyName: "Creative Studios",
             companyLocation: "Design Agency Compnay",
@@ -44,6 +45,7 @@ class Opportunities extends StatelessWidget {
           ),
           SizedBox(height: kDefaultPadding / 2),
           CompanyPostsCard(
+            bgColor: Colors.white,
             logo: "assets/images/brand_logo2.png",
             companyName: "Artifice Films",
             companyLocation: "Design Agency Compnay",

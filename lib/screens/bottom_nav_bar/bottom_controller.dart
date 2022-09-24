@@ -1,6 +1,7 @@
 import 'package:circle_app_project/constants.dart';
 import 'package:circle_app_project/screens/bottom_nav_bar/bottom_bar.dart';
 import 'package:circle_app_project/screens/connections_screen/connection_body.dart';
+import 'package:circle_app_project/screens/event_screen/event_screen.dart';
 import 'package:circle_app_project/screens/home_screen/components/my_drawer.dart';
 import 'package:circle_app_project/screens/home_screen/home_page.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class BottomController extends StatefulWidget {
     HomePage(),
     ConnectionScreenBody(),
     Center(child: Text('My Card')),
-    Center(child: Text('Events')),
+    EventScreen(),
     Center(child: Text('Business')),
   ];
 

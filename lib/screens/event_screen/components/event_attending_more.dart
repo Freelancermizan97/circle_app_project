@@ -1,8 +1,9 @@
 import 'package:circle_app_project/constants.dart';
+import 'package:circle_app_project/screens/event_screen/components/event_details_add.dart';
 import 'package:flutter/material.dart';
 
-class EventsScreen extends StatelessWidget {
-  const EventsScreen({super.key});
+class EventsAttendingMore extends StatelessWidget {
+  const EventsAttendingMore({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -108,10 +109,17 @@ class EventsCard extends StatelessWidget {
                 color: kHeaderColor.withOpacity(0.5)),
           ),
           SizedBox(height: kDefaultPadding / 2),
-          Text(
-            "More info",
-            style:
-                kTitleTextstyle.copyWith(color: kSecounderyColor, fontSize: 13),
+          InkWell(
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => EventDetailsAdd(),
+                )),
+            child: Text(
+              "More info",
+              style: kTitleTextstyle.copyWith(
+                  color: kSecounderyColor, fontSize: 13),
+            ),
           ),
         ],
       ),

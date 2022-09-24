@@ -1,5 +1,5 @@
 import 'package:circle_app_project/constants.dart';
-import 'package:circle_app_project/screens/home_screen/topics/events.dart';
+import 'package:circle_app_project/screens/home_screen/topics/events_attending.dart';
 import 'package:circle_app_project/screens/home_screen/topics/story.dart';
 import 'package:circle_app_project/screens/home_screen/topics/suggested_users.dart';
 import 'package:circle_app_project/screens/home_screen/topics/opportunities_topics.dart';
@@ -148,7 +148,7 @@ class Body extends StatelessWidget {
         SizedBox(height: kDefaultPadding),
 
         //Event
-        Events(),
+        EventsAttending(),
 
         SizedBox(height: kDefaultPadding),
 

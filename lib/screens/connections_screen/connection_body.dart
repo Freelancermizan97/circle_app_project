@@ -40,7 +40,7 @@ class _ConnectionScreenBodyState extends State<ConnectionScreenBody>
                 ),
                 Tab(
                   text: 'My Requests',
-                )
+                ),
               ],
               controller: _tabController,
               indicatorSize: TabBarIndicatorSize.tab,

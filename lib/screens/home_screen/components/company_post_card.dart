@@ -10,6 +10,7 @@ class CompanyPostsCard extends StatelessWidget {
     required this.description,
     required this.image,
     required this.logo,
+    required this.bgColor,
   }) : super(key: key);
 
   final String companyName;
@@ -18,6 +19,7 @@ class CompanyPostsCard extends StatelessWidget {
   final String description;
   final String image;
   final String logo;
+  final Color bgColor;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class CompanyPostsCard extends StatelessWidget {
       padding: EdgeInsets.all(kDefaultPadding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: Colors.white,
+        color: bgColor,
       ),
       child: Column(
         children: [
